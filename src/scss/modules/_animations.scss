@@ -1,0 +1,51 @@
+#animations-01 {
+  div {
+    background-color: cadetblue;
+    width: 100px;
+    height: 100px;
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+#animations-02 {
+  div {
+    background-color: cadetblue;
+    width: 100px;
+    height: 100px;
+    animation-name: moove;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+
+  @keyframes moove {
+    0% {
+      transform: translate(0, 0);
+      background-color: cadetblue;
+    }
+
+    50% {
+      transform: translate(0, 100px);
+      background-color: plum;
+    }
+
+    100% {
+      transform: translate(100px, 100px);
+      background-color: cadetblue;
+    }
+  }
+}

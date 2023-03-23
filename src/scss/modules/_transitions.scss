@@ -1,0 +1,30 @@
+#transitions-01 {
+  h1 {
+    color: white;
+    background-color: deepskyblue;
+    display: inline;
+    padding: 15px;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+  }
+
+  h1:hover {
+    color: deepskyblue;
+    background-color: white;
+  }
+}
+
+#transitions-02 {
+  div {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    background-color: plum;
+    padding: 15px;
+    transition: transform 2s;
+  }
+
+  div:hover {
+    transform: rotate(-90deg) scale(1.2);
+  }
+}
